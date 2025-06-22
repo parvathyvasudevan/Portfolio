@@ -896,17 +896,20 @@ h1,h2,h3,h4,p {
 @media (max-width: 768px) {
     .headern{
         flex-direction: column;
-        padding: 10px 5%;
+        padding: 15px 5%;
+        align-items: center;
     }
 
     .navbar {
         flex-direction: column;
         align-items: center;
+        gap: 10px;
         margin-top: 10px;
     }
     .home {
         flex-direction: column;
         padding:20px 5%;
+        height:auto;
         text-align: center;
     }
     .home-content {
@@ -921,29 +924,37 @@ h1,h2,h3,h4,p {
         right: auto;
         margin-top: 20px;
     }
+    .home-sci {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 20px 0;
+    }
     .about {
         grid-template-columns: 1fr;
        text-align:center;
+       padding: 20px;
     }
 
     .about-img {
         justify-self: center;
+        margin:  0 auto;
     }
     .container1 {
         width:100%;
-        padding: 30px 20px;
+        padding: 30px 10px;
         margin: 0 auto;
 
     }
     .portfolio-content {
         flex-direction: column;
-        overflow-x: unset;
+       
         gap:40px;
     }
     .contact {
         grid-template-columns: 1fr;
         text-align: center;
         padding: 10px;
+        gap: 1.5 rem;
     }
 
     .contact-form form input,
@@ -952,19 +963,31 @@ h1,h2,h3,h4,p {
     }
 
     .contact-text h2 {
-        font-size: 50px;
+        font-size: 45px;
     }
 
     .sub-title, .main-text h2 {
-        font-size: 40px;
+        font-size: 36px;
     }
 
     .read, .btn-box {
         width: auto;
-        font-size: 14px;
+        font-size: 14px;.glow-circle {
+        width: 220px;
+         height: 220px;
     }
 }
-.home-sci a {
+
+    .glow-circle img {
+     width: 100%;
+     height: 100%;
+    }
+
+    .top {
+    right: 1rem;
+    bottom: 1rem;
+  }
+  home-sci a {
     margin: 15px;
 }
 
@@ -972,6 +995,30 @@ h1,h2,h3,h4,p {
     flex-wrap: wrap;
 }
 
+
+}
+
+@media (max-width: 480px) {
+    .home-content h1 {
+        font-size: 20px;
+    }
+    .home-content p {
+        font-size: 16px;
+    }
+    .home-content h3 {
+        font-size: 20px;
+    }
+    .home-content h3:nth-of-type(2) {
+        font-size: 18px;
+    }
+    .home-img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+
+  
 
 
 
